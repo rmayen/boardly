@@ -1,0 +1,9 @@
+services:
+  boardly:
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - boardly-data:/data
+volumes:
+  boardly-data:
